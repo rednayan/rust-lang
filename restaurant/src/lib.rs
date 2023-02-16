@@ -8,13 +8,13 @@ mod back_of_house{
         pub fn summer(toast: &str) -> Breakfast  {
             Breakfast{
                 toast : String::from(toast),
-                seasonal_fruit : String::From("peaches"),
+                seasonal_fruit : String::from("peaches"),
             }
         }
     }
 }
 
-pub eat_at_restaurant() {
+pub fn eat_at_restaurant() {
     let mut meal = back_of_house::Breakfast::summer("Rye");
     meal.toast = String::from("Wheat");
     println!("I would like {} toast",meal.toast);

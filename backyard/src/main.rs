@@ -5,5 +5,5 @@ pub mod garden;
 
 fn main() {
     let plant = Asparagus {};
-    println!("I am growing {}",plant);
+    println!("I am growing {:?}",plant);
 }
