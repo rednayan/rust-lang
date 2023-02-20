@@ -15,5 +15,5 @@ fn vectors() {
 }
 
 fn main() {
-    vectors();
+    let vec = vectors();
 }
