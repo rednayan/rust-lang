@@ -37,15 +37,17 @@ mod tests {
     }
 
     #[test]
+    fn test_for_string() {
+        let result : String = gree("carol");
+       assert!(result.contains("carol"), "Greetings did not contain name `{}`",result);
+    }
+
+    #[test]
     fn this_adds_two_numbers(){
         let a : f32 = 12.2;
         let b : f32 = 24.5;
 
         assert_eq!(36.7,add(a, b));
     }
-    #[test]
-    fn test_for_string() {
-        let result : String = gree("carol");
-       assert!(result.contains("carol"), "Greetings did not contain name `{}`",result);
-    }
+    
 }
