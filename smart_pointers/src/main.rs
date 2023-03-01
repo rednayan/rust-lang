@@ -1,6 +1,7 @@
-use List::{Cons,Nil}; 
 use std::ops::Deref;
 use std::mem::drop;
+use std::rc::Rc;
+use List::{Cons,Nil};
 
 enum List{
     Cons(i32,Box<List>),
@@ -22,7 +23,6 @@ impl<T> Deref for MyBox<T> {
         return &self.0;
     }
  }
-
 
  struct CustomSmartPointer{
     data: String,
