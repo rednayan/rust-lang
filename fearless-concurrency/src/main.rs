@@ -13,5 +13,11 @@ fn main() {
         thread::sleep(Duration::from_millis(1));
     }
 
+    let v = vec![1,2,4];
+    let un_handle = thread::spawn( move || {
+        println!("here's a vector : {:?}",v);
+    });
+
     handle.join().unwrap();
+    un_handle.join().unwrap();
 }

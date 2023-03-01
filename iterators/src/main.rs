@@ -5,5 +5,5 @@ fn main() {
     let total: i32 = v1.iter().sum();
     println!("{total}");
 
-    let v3: Vec<i32>= v2.iter().map(|x| x+1).collect();
+    let _v3: Vec<i32>= v2.iter().map(|x| x+1).collect();
 }
